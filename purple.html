@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project - Automoblox - X9 Sports Utility</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/purple.css" rel="stylesheet">
+</head>
+
+<body class="purple">
+    <!-- nav bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <!-- nav logo -->
+                    <svg viewBox="0 0 402 38" xmlns="http://www.w3.org/2000/svg" class="white-logo">
+                        <path d="M130.892 10.0396H120L111.284 28.7865H120.908L121.79 26.7145H129.103L129.985 28.7865H139.609L130.892 10.0396ZM123.274 22.2191L125.444 16.252L127.619 22.2191H123.274Z" />
+                        <path d="M164.872 10.0396C164.872 10.0396 164.963 17.0612 164.872 22.9252C164.75 30.7571 141.189 30.7247 141.309 22.9209C141.399 17.0612 141.309 10.0392 141.309 10.0392H150.71V22.0483C150.71 22.0483 150.695 22.8698 153.125 22.8698C155.397 22.8698 155.467 22.0483 155.467 22.0483V10.0392H164.872V10.0396Z" />
+                        <path d="M189.498 10.0396V16.1971H184.345V28.7865H174.91V16.1971H169.757V10.0396H189.498Z" />
+                        <path d="M206.77 10.0396C198.949 10.0396 192.608 14.2333 192.608 19.413C192.608 24.5889 198.949 28.7865 206.77 28.7865C214.595 28.7865 220.932 24.5889 220.932 19.413C220.932 14.2333 214.595 10.0396 206.77 10.0396ZM206.77 23.081C204.085 23.081 201.908 21.5365 201.908 19.6371C201.908 17.7339 204.085 16.1932 206.77 16.1932C209.458 16.1932 211.631 17.7339 211.631 19.6371C211.631 21.5361 209.458 23.081 206.77 23.081Z" />
+                        <path d="M275.678 10.0396C267.857 10.0396 261.516 14.2333 261.516 19.413C261.516 24.5889 267.857 28.7865 275.678 28.7865C283.503 28.7865 289.84 24.5889 289.84 19.413C289.84 14.2333 283.503 10.0396 275.678 10.0396ZM275.678 23.081C272.994 23.081 270.816 21.5365 270.816 19.6371C270.816 17.7339 272.994 16.1932 275.678 16.1932C278.367 16.1932 280.539 17.7339 280.539 19.6371C280.54 21.5361 278.367 23.081 275.678 23.081Z" />
+                        <path d="M355.494 10.0396C347.673 10.0396 341.332 14.2333 341.332 19.413C341.332 24.5889 347.673 28.7865 355.494 28.7865C363.319 28.7865 369.656 24.5889 369.656 19.413C369.656 14.2333 363.319 10.0396 355.494 10.0396ZM355.494 23.081C352.81 23.081 350.633 21.5365 350.633 19.6371C350.633 17.7339 352.81 16.1932 355.494 16.1932C358.183 16.1932 360.356 17.7339 360.356 19.6371C360.356 21.5361 358.183 23.081 355.494 23.081Z" />
+                        <path d="M259.182 28.7865H250.465L248.102 18.9554L243.741 28.7865H238.575L234.214 18.9554L231.846 28.7865H223.133L228.187 10.0396H237.013L241.158 20.0496L245.303 10.0396H254.129L259.182 28.7865Z" />
+                        <path d="M312.298 19.2174C313.995 19.001 315.573 17.1374 315.486 14.4332C315.405 11.9287 313.506 10.302 308.595 10.0396C297.798 10.0396 294.146 10.0396 294.146 10.0396V28.7865H310.099C313.175 28.8031 316.891 27.0183 316.891 23.8978C316.891 21.6056 316.075 20.2242 312.298 19.2174ZM302.898 14.1707H306.017C306.017 14.1707 307.036 14.6406 307.036 15.8098C307.036 16.8749 306.017 17.445 306.017 17.445H302.898V14.1707ZM306.498 24.4679H302.898V21.1893H306.498C306.498 21.1893 307.787 21.6051 307.787 22.8284C307.787 24.156 306.498 24.4679 306.498 24.4679Z" />
+                        <path d="M320.472 10.0408V28.7865H337.638V22.5957H329.666V10.0396L320.472 10.0408Z" />
+                        <path d="M400 28.7865H389.218L385.407 23.894L381.599 28.7865H370.817L379.72 18.5933L372.157 10.0396H382.673L385.411 13.7549L388.145 10.0396H398.661L391.094 18.5933H391.098L400 28.7865Z" />
+                        <path d="M99.7863 18.2691C92.3212 17.0773 75.0521 15.0595 70.7434 13.4761C69.7817 13.1224 68.6139 12.5625 67.3294 11.8705C64.4718 5.31381 57.9323 0.732056 50.323 0.732056C42.7136 0.732056 36.1742 5.31381 33.3166 11.8705C32.032 12.5625 30.8643 13.1224 29.9026 13.4761C25.5939 15.0595 8.32474 17.0773 0.85964 18.2691C-0.289232 18.4511 -0.289232 20.1066 0.85964 20.2886C8.32474 21.4805 25.5939 23.4983 29.9026 25.0816C30.8643 25.4337 32.032 25.9935 33.3166 26.689C36.1759 33.2439 42.7136 37.8257 50.323 37.8257C57.9323 37.8257 64.4701 33.2439 67.3294 26.689C68.6139 25.9935 69.7817 25.4337 70.7434 25.0816C75.0521 23.4983 92.3212 21.4805 99.7863 20.2886C100.935 20.1066 100.935 18.4511 99.7863 18.2691ZM50.323 34.8496C41.7245 34.8496 34.7522 27.8774 34.7522 19.2789C34.7522 10.6804 41.7245 3.70813 50.323 3.70813C58.9215 3.70813 65.8937 10.6804 65.8937 19.2789C65.8937 27.8774 58.9215 34.8496 50.323 34.8496Z" />
+                        <path d="M50.1701 12.5693H50.1083C49.8026 13.5242 49.4952 14.6747 49.1277 15.6536L47.5341 19.7167H52.8371L51.2125 15.6536C50.8141 14.6507 50.4775 13.5242 50.1701 12.5693Z" />
+                        <path d="M50.323 6.86621C43.4675 6.86621 37.9104 12.4234 37.9104 19.2788C37.9104 26.1343 43.4675 31.6915 50.323 31.6915C57.1784 31.6915 62.7356 26.1343 62.7356 19.2788C62.7356 12.4234 57.1784 6.86621 50.323 6.86621ZM55.3512 26.6701L53.4811 21.9939H46.921L45.1436 26.6701H41.2505L47.8724 10.1703H52.686L59.3989 26.6701H55.3529H55.3512Z" />
+                    </svg>
+                </a>
+                <!-- mobile toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- nav bar items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="red.html">
+                                <img alt="C9 Sports Coupe" src="./images/c9/c9_front.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="orange.html">
+                                <img alt="A9 Compact" src="./images/a9/a9_front.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="green.html">
+                                <img alt="T9 Pick-up Truck" src="./images/t9/t9_front.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blue.html">
+                                <img alt="M9 Sportvan" src="./images/m9/m9_front.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img alt="X9 Sports Utility" src="./images/x9/x9_front.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- column 1 - image, button & carousel -->
+        <div>
+            <svg class="animation" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <path class="circle-sm" d="M69.8,24.3C59.4,15.8,42.5,12,29.5,19.9C12.7,30.2,9,55.7,20.3,71.4c13.5,18.8,45.9,19.2,58.6,2C89.4,59.2,84.4,36,69.8,24.3z" />
+                <path class="circle-lg" d="M90,61.2c4.7-15.8,1-36.9-14.2-47.9c-19.7-14.2-50.6-6.2-63,14c-14.9,24.3,0,61.3,25.7,67.6C59.7,100.1,83.6,83.4,90,61.2z" />
+            </svg>
+            <!-- carousel -->
+            <div id="reviews" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner align-self-center">
+                    <!-- photo 1 -->
+                    <div class="carousel-item active">
+                        <img alt="X9 Sports Utility Front" src="./images/x9/x9_front.png">
+                    </div>
+                    <!-- photo 2 -->
+                    <div class="carousel-item">
+                        <img alt="X9 Sports Utility Rear" src="./images/x9/x9_rear.png">
+                    </div>
+                    <!-- photo 3 -->
+                    <div class="carousel-item">
+                        <img alt="X9 Sports Utility Side" src="./images/x9/x9_side.png">
+                    </div>
+                    <div class="carousel-indicators align-items-end m-0">
+                        <button type="button" data-bs-target="#reviews" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#reviews" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#reviews" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- add to cart button -->
+            <a class="btn-shop" href="#">
+                <i class="bi bi-cart"></i>
+                <p>Add to Cart</p>
+            </a>
+        </div>
+        
+        <!-- column 2 - toy details -->
+        <section>
+            <!-- start of details -->
+            <h1>X9 Sports Utility</h1>
+            <div>
+                <p>Item No. 985010</p>
+                <p class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </p>
+            </div>
+            <!-- price -->
+            <h2>$45</h2>
+
+            <!-- start of accordion -->
+            <div class="accordion accordion-flush" id="toySpecs">
+
+                <!-- accordion-item 1: about the Product -->
+                <section class="accordion-item purple">
+                    <h3 class="accordion-header purple">
+                        <button class="accordion-button collapsed purple" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            About the Product
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#toySpecs">
+                        <p class="accordion-body">The rich purple roof and soft rubber tires appropriately dress the Automoblox King of the Road. With an increased ride height and extra-large rims, this ride rolls with the big boys. Increased storage capacity in the rear block allows this ultimate lifestyle vehicle to be equally big on adventure and style.</p>
+                    </div>
+                </section>
+
+                <!-- accordion-item 2: specs -->
+                <section class="accordion-item purple">
+                    <h3 class="accordion-header purple">
+                        <button class="accordion-button collapsed purple" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Specs
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#toySpecs">
+                        <div class="accordion-body">
+                            <!-- bar graph 1 -->
+                            <h4>Speed</h4>
+                            <svg viewbox="0 0 600 30" xmlns="http://www.w3.org/2000/svg" class="graph">
+                                <rect class="bar-bg" x="0" y="0" width="100%" height="12"></rect>
+                                <rect class="purple" x="0" y="0" width="70%" height="12"></rect>
+                            </svg>
+                            <!-- bar graph 2 -->
+                            <h4>Acceleleration</h4>
+                            <svg viewbox="0 0 600 30" xmlns="http://www.w3.org/2000/svg" class="graph">
+                                <rect class="bar-bg" x="0" y="0" width="100%" height="12"></rect>
+                                <rect class="purple" x="0" y="0" width="85%" height="12"></rect>
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- accordion-item 3: additional details -->
+                <section class="accordion-item purple">
+                    <h3 class="accordion-header purple">
+                        <button class="accordion-button collapsed purple" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Additional Details
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#toySpecs">
+                        <p class="accordion-body other-details">All our products are designed by Patrick Calello using premium materials like solid European beech wood, polycarbonate plastics, and real rubber tires. These toys enhance visio-spatial processing, creative problem-solving, and both gross and fine motor skills.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>COMP2081 - Advanced Interface Design - CSS</p>
+        <p>Final Project by Jihan Duerme</p>
+    </footer>
+
+    <!-- Text and images are from:
+    https://www.fatbraintoys.com/toy_companies/automoblox_company/
+    https://web.archive.org/web/20150408034339/http://www.automoblox.com/ -->
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

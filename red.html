@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project - Automoblox</title>
+    <title>Final Project - Automoblox - C9 Sports</title>
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/orange.css" rel="stylesheet">
 </head>
 
-<body class="orange">
+<body class="red">
+    <!-- nav bar -->
     <header>
-        <!-- nav bar -->
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <!-- nav logo -->
-                    <svg viewBox="0 0 402 38" class="white-logo">
+                    <svg viewBox="0 0 402 38" xmlns="http://www.w3.org/2000/svg" class="white-logo">
                         <path d="M130.892 10.0396H120L111.284 28.7865H120.908L121.79 26.7145H129.103L129.985 28.7865H139.609L130.892 10.0396ZM123.274 22.2191L125.444 16.252L127.619 22.2191H123.274Z" />
                         <path d="M164.872 10.0396C164.872 10.0396 164.963 17.0612 164.872 22.9252C164.75 30.7571 141.189 30.7247 141.309 22.9209C141.399 17.0612 141.309 10.0392 141.309 10.0392H150.71V22.0483C150.71 22.0483 150.695 22.8698 153.125 22.8698C155.397 22.8698 155.467 22.0483 155.467 22.0483V10.0392H164.872V10.0396Z" />
                         <path d="M189.498 10.0396V16.1971H184.345V28.7865H174.91V16.1971H169.757V10.0396H189.498Z" />
@@ -45,28 +44,28 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="car-one.html">
-                                <img alt="C9 Sports Coupe" src="./images/c9_large.png">
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                <img alt="A9 Compact" src="./images/a9_large.png">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <img alt="C9 Sports Coupe" src="./images/c9/c9_front.png">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="car-three.html">
-                                <img alt="T9 Pick-up Truck" src="./images/t9_large.png">
+                            <a class="nav-link" href="orange.html">
+                                <img alt="A9 Compact" src="./images/a9/a9_front.png">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="car-four.html">
-                                <img alt="X9 Sports Utility" src="./images/m9_large.png">
+                            <a class="nav-link" href="green.html">
+                                <img alt="T9 Pick-up Truck" src="./images/t9/t9_front.png">
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="car-five.html">
-                                <img alt="M9 Sportvan" src="./images/x9_large.png">
+                            <a class="nav-link" href="blue.html">
+                                <img alt="M9 Sportvan" src="./images/m9/m9_front.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="purple.html">
+                                <img alt="X9 Sports Utility" src="./images/x9/x9_front.png">
                             </a>
                         </li>
                     </ul>
@@ -75,25 +74,52 @@
         </nav>
     </header>
 
+    <!-- main content -->
     <main>
-        <!-- column 1 - image & button -->
-        <section>
-            <svg class="animation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                <path class="circle-sm" d="M69.8,24.3C59.4,15.8,42.5,12,29.5,19.9C12.7,30.2,9,55.7,20.3,71.4c13.5,18.8,45.9,19.2,58.6,2C89.4,59.2,84.4,36,69.8,24.3z"/>
-                <path class="circle-lg" d="M90,61.2c4.7-15.8,1-36.9-14.2-47.9c-19.7-14.2-50.6-6.2-63,14c-14.9,24.3,0,61.3,25.7,67.6C59.7,100.1,83.6,83.4,90,61.2z"/>
+        <!-- column 1 - image, button & carousel -->
+        <div>
+            <svg class="animation" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <path class="circle-sm" d="M69.8,24.3C59.4,15.8,42.5,12,29.5,19.9C12.7,30.2,9,55.7,20.3,71.4c13.5,18.8,45.9,19.2,58.6,2C89.4,59.2,84.4,36,69.8,24.3z" />
+                <path class="circle-lg" d="M90,61.2c4.7-15.8,1-36.9-14.2-47.9c-19.7-14.2-50.6-6.2-63,14c-14.9,24.3,0,61.3,25.7,67.6C59.7,100.1,83.6,83.4,90,61.2z" />
             </svg>
-            <img alt="C9 Sports Coupe" src="./images/a9_large.png">
-            <a class="btn-cart" href="#">
+            <!-- carousel -->
+            <div id="car-images" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner align-self-center">
+                    <!-- photo 1 -->
+                    <div class="carousel-item active">
+                        <img alt="C9 Sports Coupe Front" src="./images/c9/c9_front.png">
+                    </div>
+                    <!-- photo 2 -->
+                    <div class="carousel-item">
+                        <img alt="C9 Sports Coupe Rear" src="./images/c9/c9_rear.png">
+                    </div>
+                    <!-- photo 3 -->
+                    <div class="carousel-item">
+                        <img alt="C9 Sports Coupe Side" src="./images/c9/c9_side.png">
+                    </div>
+                    <div class="carousel-indicators align-items-end m-0">
+                        <button type="button" data-bs-target="#car-images" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#car-images" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#car-images" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- add to cart -->
+            <a class="btn-shop" href="#">
                 <i class="bi bi-cart"></i>
                 <p>Add to Cart</p>
-            </a> 
-        </section>
+            </a>
+        </div>
+        
         <!-- column 2 - toy details -->
         <section>
             <!-- start of details -->
-            <h1>A9 Compact</h1>
+            <h1>C9 Sports Coupe</h1>
             <div>
-                <p>Item No. 985010</p>
+                <p>Item No. 990098</p>
                 <p class="stars">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -102,94 +128,63 @@
                     <i class="bi bi-star-fill"></i>
                 </p>
             </div>
-            <h2>$45</h2>
-            <h3>About This Toy</h3>
-            <p>Inspired by the compact cars popular in Europe and Japan, the A9 may be the smallest car in the Automoblox line-up but it is certainly big on style. Featuring smaller three-spoke wheels, low-profile tires and a generous roofline with plenty of headroom, your child is sure to get great mileage from this little gem.</p>
+            <!-- price -->
+            <h2>$38</h2>
 
-            <!-- accordion -->
-            <div class="accordion accordion-flush" id="specsAccordion" data-bs-theme="dark">
+            <!-- start of accordion -->
+            <div class="accordion accordion-flush" id="toySpecs">
 
-                <!-- accordion-item 1: specs -->
-                <section class="accordion-item orange">
-                    <h3 class="orange">
-                        <button class="accordion-button collapsed orange" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <!-- accordion-item 1: about the Product -->
+                <section class="accordion-item red">
+                    <h3 class="accordion-header red">
+                        <button class="accordion-button collapsed red" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            About the Product
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#toySpecs">
+                        <p class="accordion-body">With deck and chin spoilers, rear diffusers, side skirts and other high performance styling cues, the Automoblox R-Line speaks the language of serious driving fun.Fully interchangeable with other models, R-Line owners can mix-and-match parts to build unique performance models or just add a little horse power to the current Automoblox styles.</p>
+                    </div>
+                </section>
+
+                <!-- accordion-item 2: specs -->
+                <section class="accordion-item red">
+                    <h3 class="accordion-header red">
+                        <button class="accordion-button collapsed red" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Specs
                         </button>
                     </h3>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#specsAccordion">
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#toySpecs">
                         <div class="accordion-body">
+                            <!-- bar graph 1 -->
                             <h4>Speed</h4>
-                            <svg viewbox="0 0 600 30" class="graph">
-                                <rect class="bar-bg" x="0" y="0"></rect>
-                                <rect id="bar-1" class="d-orange" x="0" y="0"></rect>
+                            <svg viewbox="0 0 600 30" xmlns="http://www.w3.org/2000/svg" class="graph">
+                                <rect class="bar-bg" x="0" y="0" width="100%" height="12"></rect>
+                                <rect class="red" x="0" y="0" width="70%" height="12"></rect>
                             </svg>
+                            <!-- bar graph 2 -->
                             <h4>Acceleleration</h4>
-                            <svg viewbox="0 0 600 30" class="graph">
-                                <rect class="bar-bg" x="0" y="0"></rect>
-                                <rect id="bar-2" class="d-orange" x="0" y="0"></rect>
+                            <svg viewbox="0 0 600 30" xmlns="http://www.w3.org/2000/svg" class="graph">
+                                <rect class="bar-bg" x="0" y="0" width="100%" height="12"></rect>
+                                <rect class="red" x="0" y="0" width="85%" height="12"></rect>
                             </svg>
                         </div>
-                    </div> 
+                    </div>
                 </section>
 
-                <!-- accordion-item 2: other images -->
-                <section class="accordion-item orange">
-                    <h3 class="orange">
-                        <button class="accordion-button collapsed orange" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Other Images
+                <!-- accordion-item 3: additional details -->
+                <section class="accordion-item red">
+                    <h3 class="accordion-header red">
+                        <button class="accordion-button collapsed red" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Additional Details
                         </button>
                     </h3>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#specsAccordion">
-                        <div class="accordion-body more-images">
-                            <img alt="C9 Side View" src="./images/a9_side-1.jpg">
-                            <img alt="C9 Side View" src="./images/a9_side-2.jpg">
-                            <img alt="C9 Pieces" src="./images/a9_pieces.jpg">
-                        </div>
-                    </div> 
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#toySpecs">
+                        <p class="accordion-body other-details">All our products are designed by Patrick Calello using premium materials like solid European beech wood, polycarbonate plastics, and real rubber tires. These toys enhance visio-spatial processing, creative problem-solving, and both gross and fine motor skills.</p>
+                    </div>
                 </section>
+            </div>
         </section>
     </main>
-
-    <!-- reviews -->
-    <aside>
-        <h3>Customer Reviews</h3>
-        <!-- carousel -->
-        <div id="reviews" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner align-self-center">
-                <!-- review 1 -->
-                <div class="carousel-item active">
-                    <blockquote>
-                        <h5>"Great product is wonderful. This car is a great addition to my son's Automoblox collection. Great color and size. My son loves the people inside."</h5>
-                        <footer><small>Amy L.</small></footer>
-                    </blockquote>
-                </div>
-                <!-- review 2 -->
-                <div class="carousel-item">
-                    <blockquote>
-                        <h5>"A very nice Christmas gift. I have given Automoblox cars as gifts for several years. The kids are still playing with the first ones many years later."</h5>
-                        <footer><small>Patrick G.</small></footer>
-                    </blockquote>
-                </div>
-                <!-- review 3 -->
-                <div class="carousel-item">
-                    <blockquote>
-                        <h5>"These cars are the BEST gift for a 4 - 6 yr olds! All wooden, parts come apart -- how much fun kids have taking things apart and putting them back together."</h5>
-                        <footer><small>Angela D.</small></footer>
-                    </blockquote>
-                </div>
-                <div class="carousel-indicators align-items-end m-0">
-                    <button type="button" data-bs-target="#reviews" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#reviews" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#reviews" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-            </div>
-        </div>
-    </aside>
 
     <!-- footer -->
     <footer>
@@ -202,7 +197,6 @@
     https://web.archive.org/web/20150408034339/http://www.automoblox.com/ -->
 
     <!-- JS -->
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
