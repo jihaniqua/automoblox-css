@@ -23,15 +23,22 @@
     --secondary-purple: #471f6e;
     --yellow: #f8b634;
     --d-gray: #1d1d1d;
-    --l-gray: #f4f4f4;
+    --l-gray: #ccc;
     --white: #fff;
     --opaque: rgba(255, 255, 255, 0.1);
+    --tint: rgba(0, 0, 0, 0.7);
 }
 
 *, html, body {
     color: var(--white);
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
+}
+h1, h3 {
+    font-family: 'Bluescreens Regular', sans-serif;
+}
+h1 {
+    font-size: 5rem;
 }
 
 /* buttons
@@ -87,76 +94,80 @@
 
 /* landing page
 --------------------------------------------- */
-.home {
-    grid-template-rows: min-content 1fr min-content;
-    border: 2rem solid var(--primary-red);
-    border-bottom: 0;
+#home {
+    grid-template-rows: min-content 1fr;
+}
+/* landing page - header */
+#home header {
+    background-image: url("../images/automoblox-hero.jpg");
+    background-color: var(--tint);
+    background-blend-mode: multiply;
+    padding: 3rem 3rem 5rem;
+    text-align: center;
+}
+#home header p {
+    margin: auto;
+    max-width: 800px;
 }
 /* landing page - logo */
-.home svg {
-    margin: 1rem;
+#home svg {
+    margin: 2rem auto;
+    max-width: 300px;
 }
 .logomark {
-    fill: var(--primary-red);
+    fill: var(--primary-red)
 }
 .logotype {
-    fill: var(--d-gray);
+    fill: white;
 }
-/* landing page - navigation & button */
-.home div {
-    align-self: center;
-    margin: 0 0 5rem;
+#home > main {
+    display: block;
+    margin: 2rem;
 }
-/* home nav container and items position */
-.home nav {
+/* landing page - nav */
+#home nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
+    align-items: center;
     gap: 1rem;
-    min-height: 250px;
-    margin-bottom: 1rem;
+    min-height: 150px;
+    margin: 2rem 0;
 }
-/* home nav links */
-.home a {
+/* nav links */
+#home a {
     text-decoration: none;
     color: var(--primary-red);
-}
-.home figure {
-    margin: 0;
     transition: transform 0.4s ease;
 }
-.home figure:hover {
+#home a:hover {
     transform: scale(1.2);
 }
-/* home nav links - car images */
-.home img {
+/* nav links - car images */
+#home img {
     width: 200px;
 }
-/* home nav links - car names */
-.home figure p {
+/* nav links - car names */
+#home a p {
     color: var(--d-gray);
     text-align: center;
     font-weight: 700;
     margin: 0;
 }
-/* home nav car animation timing & position */
-.home figure:nth-of-type(1) {
-    align-self: end;
+/* nav car animation timing & position */
+#home figure:nth-of-type(1) {
     animation: 1.2s ease-in reverse slidein;
 }
-.home figure:nth-of-type(2) {
-    align-self: center;
+#home figure:nth-of-type(2) {
     animation: 1.6s ease-in reverse slidein;
 }
-.home figure:nth-of-type(3) {
+#home figure:nth-of-type(3) {
     animation: 2s ease-in reverse slidein;
 }
-.home figure:nth-of-type(4) {
-    align-self: center;
+#home figure:nth-of-type(4) {
     animation: 2.4s ease-in reverse slidein;
 }
-.home figure:nth-of-type(5) {
-    align-self: end;
+#home figure:nth-of-type(5) {
     animation: 2.8s ease-in reverse slidein;
 }
 @keyframes slidein {
@@ -164,14 +175,10 @@
         transform: translateX(150%);
     }
 }
-/* home button */
-.home .btn-shop {
-    margin: 0 auto;
-}
 /* landing page - footer
 -------------------------- */
-.home footer {
-    background-color: var(--primary-red);
+#home footer {
+    background-color: var(--d-gray);
 }
 
 /* header nav
@@ -252,10 +259,6 @@ section {
 
 /* column 2 -car details column
 --------------------------------------------- */
-/* car name */
-h1 {
-    font: 5rem 'Bluescreens Regular', sans-serif;
-}
 /* item no. & star ratings */
 h1 + div {
     display: flex;
@@ -294,8 +297,8 @@ h3 button,
 .accordion-button,
 .accordion-button::after,
 .accordion-button:not(.collapsed) {
+    font-size: 2rem;
     text-transform: uppercase;
-    font: 2rem 'Bluescreens Regular', sans-serif;
     color: var(--white);
 }
 /* accordion - remove borders */
@@ -351,26 +354,14 @@ body {
     min-height: 100vh;
 }
 
-/* large screen
---------------------------------------------- */
- @media screen and (min-width: 769px) {
-    /* hide vertical logo */
-    .home svg:nth-of-type(2) {
-        display: none;
-    }
-}
-
 /* mobile
 --------------------------------------------- */
 @media screen and (max-width: 768px) {
-    .home svg:nth-of-type(2) {
-        display: block;
-        max-width: 400px;
-        margin: 1rem auto;
+    h1 {
+        font-size: 3.5rem;
     }
-    /* hide horizontal logo */
-    .home svg:nth-of-type(1){
-        display: none;
+    h2 {
+        font-size: 2.4rem;
     }
     /* smaller nav logo */
     .white-logo {
@@ -399,14 +390,14 @@ body {
         text-align: center;
     }
     /* home nav car animation timing & position */
-    .home {
+    #home {
         height: auto;
     }
-    .home figure:nth-of-type(1),
-    .home figure:nth-of-type(2),
-    .home figure:nth-of-type(3),
-    .home figure:nth-of-type(4),
-    .home figure:nth-of-type(5) {
+    #home figure:nth-of-type(1),
+    #home figure:nth-of-type(2),
+    #home figure:nth-of-type(3),
+    #home figure:nth-of-type(4),
+    #home figure:nth-of-type(5) {
         animation: paused slidein;
     }
 }
